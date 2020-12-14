@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 480px) {
+  /* --------------------------
+   全体構造
+  -------------------------- */
+  .content {
+    width: auto;
+  }
+  /* --------------------------
+   ヘッダー
+  -------------------------- */
+  header .inner {
+    width: auto;
+    height: auto; /*高さがあると子タグが横にいくので打消しでautoを書く*/
+  }
+  header h1 {
+    position: static; /*絶対配置を解除*/
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+  }
+  header .main-nav {
+    display: none;
+  }
+  header .hamburger-button {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  header .hamburger-nav {
+    height: 100vh; /*vh=view height ブラウザ画面いっぱい　vhとvwがある*/
+    background-color: rgba(0, 0, 0, .5);
+  }
+  header .hamburger-button path { /*ハンバーガーメニューの三本線アイコンのカラーの変更の仕方*/
+    fill: #fff;
+  }
+  header .hamburger-button svg {
+    width: 10px;
+    height: 10px;
+  }
+  /*header .main-nav {
+   position: static;絶対配置を解除
+  }*/
+  /*header .main-nav ul{
+   overflow: hidden;asideタグのfloat打消し用
+    background-color: var(--main-color);
+  }*/
+  /*header .main-nav li{
+    margin: 0;li隙間を消す
+    width: 25%;
+  }*/
+  /*header .main-nav li img{
+    width: 100%;
+    height: auto;
+  }*/
+  /* --------------------------
+   メイン
+  -------------------------- */
+  main {
+    width: auto;
+    float: none;
+    margin-bottom: 60px;
+  }
+  /* --------------------------
+   サイド
+  -------------------------- */
+  aside {
+    width: auto; /*asideを画面いっぱいに広げる*/
+    float: none;
+    margin: 0 auto;
+  }
+  aside .banner {
+    text-align: center; /*twitterロゴを中央に*/
+  }
+  aside .news {
+    margin: 0 20px; /*お知らせの左右のサイズ調整*/
+  }
+  /* --------------------------
+  フッター
+  -------------------------- */
+  footer {
+    height: auto;
+  }
+  footer address {
+    margin-top: 20px;
+  }
+  footer p {
+    margin: 20px 0;
+  }
+  /*スマホ表示*/
+  footer br {
+    display: inline;
+  }
+  /* --------------------------
+   トップページ
+  -------------------------- */
+  .home main figure img {
+    width: 100%;
+    height: auto;
+  }
+  /* --------------------------
+   学科紹介
+  -------------------------- */
+  .course article {
+    margin: 0 20px;
+  }
+  .course main section {
+    margin: 0 0 60px 0;
+  }
+  .course main figure {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .course main figure img {
+    width: 50%;
+    height: auto;
+  }
+  .course main p {
+    margin: 0 auto;
+    text-align: justify;
+  }
+} /*mediaクエリ終了用*/
